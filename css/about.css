@@ -1,3 +1,7 @@
+* {
+    color: #332940 !important;
+}
+
 article,
 figure,
 footer,
@@ -1192,13 +1196,7 @@ p a {
     opacity: .1
 }
 
-.page-section {
-    color: #000
-}
 
-:not(.has-background) .section-background {
-    background-color: #fff
-}
 
 h3 {
     color: #000

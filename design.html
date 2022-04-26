@@ -2,14 +2,343 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesley Yan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Open+Sans|Avenir" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/isScroll.js"></script>
+    <script>
+        $(document).ready(function () {
+            isScroll.init('.portfolio-grid-basic');
+            const top = $('.header-announcement-bar-wrapper').outerHeight()
+            $('.header-menu-nav').css('padding-top', `${top}px`)
+            $(window).resize(function () {
+                const top = $('.header-announcement-bar-wrapper').outerHeight()
+                $('.header-menu-nav').css('padding-top', `${top}px`)
+            });
+        });
+
+    </script>
 </head>
 
-<body>
+<body class="tweak-portfolio-grid-basic-width-full  tweak-portfolio-grid-basic-height-small" tabindex="-1">
+    <div class="clearfix site-wrapper">
+        <div class="floating-cart hidden">
+            <a href="#" class="icon icon--stroke icon--cart sqs-custom-cart">
+                <span class="Cart-inner">
+                    <svg class="icon icon--cart" viewBox="0 0 31 24">
+                        <g class="svg-icon cart-icon--odd">
+                            <circle stroke-miterlimit="10" cx="22.5" cy="21.5" r="1"></circle>
+                            <circle stroke-miterlimit="10" cx="9.5" cy="21.5" r="1"></circle>
+                            <path fill="none" stroke-miterlimit="10" d="M0,1.5h5c0.6,0,1.1,0.4,1.1,1l1.7,13
+      c0.1,0.5,0.6,1,1.1,1h15c0.5,0,1.2-0.4,1.4-0.9l3.3-8.1c0.2-0.5-0.1-0.9-0.6-0.9H12"></path>
+                        </g>
+                    </svg>
+                    <div class="icon-cart-quantity">
+                        <span class="sqs-cart-quantity">0</span>
+                    </div>
+                </span>
+            </a>
+        </div>
 
+        <header class="header theme-col--primary" tabindex="-1">
+            <div class="sqs-announcement-bar-dropzone"></div>
+
+            <div class="header-announcement-bar-wrapper">
+                <a href="#" tabindex="1" class="header-skip-link sqs-button-element--primary">
+                    Skip to Content
+                </a>
+                <div class="header-border" style="border-width: 0px !important"></div>
+                <div class="header-dropshadow" style=""></div>
+
+                <div class="header-inner container--fluid header-mobile-layout-logo-left-nav-right header-layout-nav-right"
+                    style="padding: 0">
+                    <div class="header-background theme-bg--primary"></div>
+
+                    <div class="header-display-desktop">
+                        <div class="header-title-nav-wrapper">
+                            <div class="header-title">
+                                <div class="header-title-logo">
+                                    <a href="index.html">
+                                        <img src="" class="logoImg" alt="Lesley Yan" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-nav">
+                                <div class="header-nav-wrapper">
+                                    <nav class="header-nav-list">
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="index.html">
+                                                <span class="visually-hidden">Current Page:</span>
+
+                                                UI/UX
+                                            </a>
+                                        </div>
+
+                                        <div
+                                            class="header-nav-item header-nav-item--collection header-nav-item--active">
+                                            <a href="#">
+                                                Design
+                                            </a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="about.html">
+                                                About
+                                            </a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <img onclick="changeMode()" src="" id="mode">
+                                            <style>
+                                                #mode {
+                                                    width: 28px;
+                                                    cursor: pointer;
+                                                }
+                                            </style>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-actions header-actions--right">
+                            <div class="showOnMobile"></div>
+
+                            <div class="showOnDesktop"></div>
+                        </div>
+
+                        <div class="header-burger menu-overlay-has-visible-non-navigation-items no-actions">
+                            <button class="header-burger-btn burger">
+                                <span hidden="" class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                                <span hidden="" class="js-header-burger-close-title visually-hidden">Close Menu</span>
+                                <div class="burger-box">
+                                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                                        <div class="top-bun"></div>
+                                        <div class="patty"></div>
+                                        <div class="bottom-bun"></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header-display-mobile">
+                        <div class="header-title-nav-wrapper">
+                            <div class="header-title">
+                                <div class="header-title-logo">
+                                    <a href="index.html">
+                                        <img src="" class="logoImg" alt="Lesley Yan" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="header-nav">
+                                <div class="header-nav-wrapper">
+                                    <nav class="header-nav-list">
+                                        <div
+                                            class="header-nav-item header-nav-item--collection header-nav-item--active header-nav-item--homepage">
+                                            <a href="index.html">
+                                                <span class="visually-hidden">Current Page:</span>
+
+                                                UI/UX
+                                            </a>
+                                        </div>
+
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="about.html">
+                                                About
+                                            </a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-actions header-actions--right">
+                            <div class="showOnMobile"></div>
+
+                            <div class="showOnDesktop"></div>
+                        </div>
+
+                        <div class="header-burger menu-overlay-has-visible-non-navigation-items no-actions">
+                            <button class="header-burger-btn burger" onclick="openMenu(this)">
+                                <span hidden="" class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                                <span hidden="" class="js-header-burger-close-title visually-hidden">Close Menu</span>
+                                <div class="burger-box">
+                                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                                        <div class="top-bun"></div>
+                                        <div class="patty"></div>
+                                        <div class="bottom-bun"></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu header-menu--folder-list">
+                <div class="header-menu-bg theme-bg--primary"></div>
+                <div class="header-menu-nav">
+                    <nav class="header-menu-nav-list">
+                        <div class="header-menu-nav-folder header-menu-nav-folder--active">
+                            <div class="header-menu-nav-folder-content">
+                                <div
+                                    class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active header-menu-nav-item--homepage">
+                                    <a href="index.html">
+                                        <span class="visually-hidden">Current Page:</span>
+
+                                        UI/UX
+                                    </a>
+                                </div>
+                                <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                                    <a href="#"> Design </a>
+                                </div>
+                                <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                                    <a href="about.html"> About </a>
+                                </div>
+                            </div>
+
+                            <div class="header-menu-actions"></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="container" role="main">
+            <div class="iframeBox">
+                <iframe src='https://my.spline.design/sketchbookcopy-b0bf0ae18c8c04ed2fc01fa23a89c597/' frameborder='0' width='100%' height='100%'></iframe>
+                <div >
+                    <h4>Lesley creates drawings and designs in her spare time</h4>
+                    <br>
+                    <p>Scroll down to check her work ↓</p>
+                </div>
+            </div>
+            <article class="sections">
+                <section
+                    class="page-section content-collection full-bleed-section collection-type-portfolio-grid-basic background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle">
+                    <div class="section-background"></div>
+
+                    <div class="content-wrapper" style="">
+                        <div class="content">
+                            <div class="portfolio-grid-basic grid-wrapper collection-content-wrapper animated"
+                                data-animation="fadeInUp">
+
+                                <a class="grid-item" href="#">
+                                    <div class="grid-image">
+                                        <div class="grid-image-inner-wrapper">
+                                            <img alt="Drawing of Jojo" src="img/cat.jpeg" />
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h3 class="portfolio-title">Drawing of Jojo</h3>
+                                        </h4>
+                                    </div>
+                                </a>
+
+                                <a class="grid-item" href="#">
+                                    <div class="grid-image">
+                                        <div class="grid-image-inner-wrapper">
+                                            <img alt="Drawing of Boba" src="img/dog.jpeg" />
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h3 class="portfolio-title">Drawing of Boba</h3>
+                                    </div>
+                                </a>
+
+                                <a class="grid-item" href="#">
+                                    <div class="grid-image">
+                                        <div class="grid-image-inner-wrapper">
+                                            <img alt="3D Design for Sichuan" src="img/chengdu.png" />
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h3 class="portfolio-title">3D Design for Sichuan </h3>
+                                    </div>
+                                </a>
+
+                                <a class="grid-item" href="#">
+                                    <div class="grid-image">
+                                        <div class="grid-image-inner-wrapper">
+                                            <img alt="Seesaw Coffee Poster" src="img/coffee.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h3 class="portfolio-title">Seesaw Coffee Poster</h3>
+                                    </div>
+                                </a>
+                                <a class="grid-item" href="#">
+                                    <div class="grid-image">
+                                        <div class="grid-image-inner-wrapper">
+                                            <img alt="Frankie Magazine Design" src="img/frankiemagazine.png" />
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h3 class="portfolio-title">Frankie Magazine Design </h3>
+                                    </div>
+                                </a>
+
+                                <a class="grid-item" href="#">
+                                    <div class="grid-image">
+                                        <div class="grid-image-inner-wrapper">
+                                            <img alt="Type Specimen Poster" src="img/arial.png" />
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-text">
+                                        <h3 class="portfolio-title">Type Specimen Poster </h3>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </div>
+    <script>
+        function openMenu(_this) {
+            $('body').toggleClass('header--menu-open')
+            $(_this).toggleClass('burger--active')
+        }
+        var mode = localStorage.getItem('mode') ? localStorage.getItem('mode') : 'light'
+        initMode(mode)
+        function initMode(mode) {
+            if (mode === 'light') {
+                $('#mode').attr('src', './img/dark_mode.png')
+                $('*').css('cssText', 'color:#332940 !important;')
+                $('main').css('cssText', 'background: #fff !important')
+                $('.logoImg').attr('src', './img/logo.png')
+            } else {
+                $('#mode').attr('src', './img/light_mode.png')
+                $('*').css('cssText', 'color:#fff !important;')
+                $('main').css('cssText', 'background: #332940 !important')
+                $('.logoImg').attr('src', './img/logo_white.png')
+            }
+        }
+        function changeMode() {
+            if (mode === 'light') {
+                mode = 'dark'
+                $('#mode').attr('src', './img/light_mode.png')
+                $('*').css('cssText', 'color:#fff !important;')
+                $('main').css('cssText', 'background: #332940 !important')
+                $('.logoImg').attr('src', './img/logo_white.png')
+
+            } else {
+                mode = 'light'
+                $('#mode').attr('src', './img/dark_mode.png')
+                $('*').css('cssText', 'color:#332940 !important;')
+                $('main').css('cssText', 'background: #fff !important')
+                $('.logoImg').attr('src', './img/logo.png')
+            }
+            localStorage.setItem('mode', mode)
+        }
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 * {
-    color: #000000 !important;
+    color: #332940 !important;
 }
 
 article,
@@ -989,14 +989,27 @@ screen and (max-width: 799px) {
     }
 }
 
-main .page-section:first-child {
-    padding-top: 100px
+main .iframeBox {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 600px;
+    padding-bottom: 50px;
+}
+
+main .iframeBox iframe {
+    margin-right: 0px;
+    width: 1000px;
 }
 
 @media only screen and (pointer: coarse) and (max-width: 1024px),
 screen and (max-width: 799px) {
-    main .page-section:first-child {
-        padding-top: 80.175px
+    main .iframeBox {
+        display: block;
+        padding-left: 45px;
+        padding-right: 45px;
     }
 }
 
@@ -1149,17 +1162,12 @@ body {
     color: #000
 }
 
-.page-section {
-    background-color: #fff
-}
+
 
 .page-section {
     color: #000
 }
 
-:not(.has-background) .section-background {
-    background-color: #fff
-}
 
 h3 {
     color: #000
