@@ -3,6 +3,7 @@
 This is the final project of 05-430 Programming Usable Interfaces. I made a personal portfolio website. 
 
 a. Walkthourgh video:
+https://cmu.zoom.us/rec/share/TMTv4VIu9_w1ygFVowvWzC6xZWwIbcuX1YmXiFT2XGwnOzgU1y7CmKj6xRYnyGbs.PLyQMCVPmyda95ZB?startTime=1651097677000
 
 b. Link to Figma: 
 https://www.figma.com/proto/lVsbi9rRYMxegnrTpmWKz9/PUI-A7?page-id=0%3A1&node-id=2%3A2&viewport=284%2C48%2C0.13&scaling=scale-down-width&starting-point-node-id=2%3A2
